@@ -1,1 +1,24 @@
-<p>login works!</p>
+<div class="container">
+    <div class="example-container">
+        
+    </div>
+    <div class="example-container">
+        <mat-form-field appearance="fill">
+          <mat-label>Enter your email</mat-label>
+          <input matInput placeholder="pat@example.com" [formControl]="email" required>
+          <mat-error *ngIf="email.invalid">Required*</mat-error>
+        </mat-form-field>
+      </div>
+    
+      <div class="example-container">
+        <mat-form-field appearance="fill">
+          <mat-label>Enter your password</mat-label>
+          <input matInput placeholder="******" [formControl]="password" required>
+        </mat-form-field>
+      </div>
+
+      <div class="example-container">
+        <button mat-raised-button color="primary" class="boton">Login</button>
+        <button mat-raised-button color="accent" class="boton">Sign Up</button>  
+      </div>
+</div>
